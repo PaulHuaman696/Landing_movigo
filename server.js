@@ -54,7 +54,9 @@ const path = require('path');
     });
 
     // 6. Servir estáticos
-    app.use(express.static(path.join(__dirname, 'public')));
+    app.get("*", (req, res) => {
+      res.sendFile(path.join(__dirname, "public", "index.html"));
+    });
 
     // 7. Levantar servidor
     const PORT = process.env.PORT || 3000;
