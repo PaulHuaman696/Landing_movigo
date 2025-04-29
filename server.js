@@ -2,6 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const getPublicIPAddress = require('./src/utils/getIP');
+const updateEnv = require('./src/utils/updateEnv');
 
 (async () => {
   const ip = await getPublicIPAddress();
