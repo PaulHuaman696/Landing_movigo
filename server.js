@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const getPublicIPAddress = require('./src/utils/getIP');
 const updateEnv = require('./src/utils/updateEnv');
+const path = require('path');
 
 (async () => {
   try {
