@@ -53,7 +53,7 @@ const updateEnv = require('./src/utils/updateEnv');
     });
 
     // 6. Servir estáticos
-    app.use(express.static('public'));
+    app.use(express.static(path.join(__dirname, 'public')));
 
     // 7. Levantar servidor
     const PORT = process.env.PORT || 3000;
