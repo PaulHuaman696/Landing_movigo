@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movigo Tingo María</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Vanta.js para fondo dinámico -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    #hero {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body class="text-gray-800 font-sans relative">
+
+  <!-- HERO con fondo animado -->
+  <section id="hero" class="flex flex-col justify-center items-center text-center text-black">
+    <div class="z-10">
+      <div class="w-full flex justify-center">
+        <img src="images/logo_movigo440_sin_fondo.png" alt="Logo Movigo"
+          class="w-60 block rounded-lg border-4 border-gray-300 shadow-lg mb-5 bg-gray-300">
+      </div>
+      <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg">¡Movigo llega a Tingo María!</h1>
+      <p class="text-2xl mb-8 drop-shadow-md">Muévete fácil, rápido y seguro 🌿</p>
+      <a href="#registro"
+        class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-full text-lg font-semibold shadow-md text-white">¡Quiero
+        ser parte!</a>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios"
+    class="relative py-24 bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <svg class="absolute opacity-20 w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        viewBox="0 0 1440 320">
+        <path fill="#3b82f6" fill-opacity="0.2"
+          d="M0,128L40,154.7C80,181,160,235,240,224C320,213,400,139,480,117.3C560,96,640,128,720,128C800,128,880,96,960,85.3C1040,75,1120,85,1200,101.3C1280,117,1360,139,1400,149.3L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+
+    <div class="relative z-10 text-center max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-blue-700 mb-12">¿Por qué unirte a Movigo Tingo María?</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <div class="p-6 rounded-xl shadow-lg hover:shadow-2xl bg-white/90 backdrop-blur-md transition">
+          <div class="text-blue-500 text-5xl mb-4">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Rápido</h3>
+          <p>Conecta con un conductor en minutos y ahorra tiempo.</p>
+        </div>
+
+        <div class="p-6 rounded-xl shadow-lg hover:shadow-2xl bg-white/90 backdrop-blur-md transition">
+          <div class="text-blue-500 text-5xl mb-4">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Seguro</h3>
+          <p>Viajes confiables, conductores verificados y soporte constante.</p>
+        </div>
+
+        <div class="p-6 rounded-xl shadow-lg hover:shadow-2xl bg-white/90 backdrop-blur-md transition">
+          <div class="text-blue-500 text-5xl mb-4">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Económico</h3>
+          <p>Movilidad accesible para todos en Tingo María.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section id="registro" class="relative py-24 bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <svg class="absolute opacity-30 w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        viewBox="0 0 1440 320">
+        <path fill="#3b82f6" fill-opacity="0.2"
+          d="M0,96L30,128C60,160,120,224,180,224C240,224,300,160,360,154.7C420,149,480,203,540,213.3C600,224,660,192,720,165.3C780,139,840,117,900,128C960,139,1020,181,1080,192C1140,203,1200,181,1260,149.3C1320,117,1380,75,1410,53.3L1440,32L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+        </path>
+      </svg>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto p-8 bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl">
+      <h2 class="text-4xl font-bold text-blue-600 text-center mb-8">Únete al Futuro de la Movilidad 🚗</h2>
+      <p class="text-center text-gray-600 mb-10">Sé uno de los primeros en disfrutar Movigo en Tingo María. ¡Déjanos tus
+        datos!</p>
+
+      <form id="registerForm" class="space-y-6">
+        <div class="relative">
+          <input type="text" name="name" id="name" required placeholder=" "
+            class="peer w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-transparent" />
+          <label for="name"
+            class="absolute left-4 top-4 text-gray-500 peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-focus:top-0 peer-focus:text-blue-500 transition-all text-sm">Nombre
+            completo</label>
+        </div>
+
+        <div class="relative">
+          <input type="email" name="email" id="email" required placeholder=" "
+            class="peer w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-transparent" />
+          <label for="email"
+            class="absolute left-4 top-4 text-gray-500 peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-focus:top-0 peer-focus:text-blue-500 transition-all text-sm">Correo
+            electrónico</label>
+        </div>
+
+        <div class="relative">
+          <input type="tel" name="phone" id="phone" required placeholder=" "
+            class="peer w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-transparent" />
+          <label for="phone"
+            class="absolute left-4 top-4 text-gray-500 peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-focus:top-0 peer-focus:text-blue-500 transition-all text-sm">Número
+            de teléfono</label>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-blue-500 hover:bg-blue-600 transition p-4 rounded-lg text-white font-bold text-lg shadow-md">¡Quiero
+          registrarme!</button>
+      </form>
+
+      <p id="message" class="text-center mt-6 text-blue-700 font-bold"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-600 text-white text-center p-4">
+    <p>&copy; 2025 Movigo Tingo María. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    VANTA.WAVES({
+      el: "#hero",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x3b82f6, /* Color azul */
+      shininess: 50.00,
+      waveHeight: 20.00,
+      waveSpeed: 0.75,
+      zoom: 0.85
+    });
+
+    const form = document.getElementById('registerForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch('/api/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const result = await response.json();
+        document.getElementById('message').textContent = result.message;
+        form.reset();
+      } catch (error) {
+        document.getElementById('message').textContent = "Ocurrió un error. Intenta nuevamente.";
+      }
+    });
+  </script>
+
+</body>
+
+</html>
