@@ -42,9 +42,17 @@
       </div>
       <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg">¡Movigo llega a Tingo María!</h1>
       <p class="text-2xl mb-8 drop-shadow-md">Muévete fácil, rápido y seguro 🌿</p>
-      <a href="#registro"
-        class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-full text-lg font-semibold shadow-md text-white">¡Quiero
-        ser parte!</a>
+      <!-- Nuevo contenedor flex para ambos botones -->
+      <div class="flex justify-center gap-10">
+        <a href="#registro"
+          class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-full text-lg font-semibold shadow-md text-white">¡Quiero
+          ser parte!</a>
+
+        <a href="ruta/a-tu-demo.apk" download
+          class="bg-green-500 hover:bg-green-600 transition px-6 py-3 rounded-full text-lg font-semibold shadow-md text-white">
+          Descargar Demo / APK
+        </a>
+      </div>
     </div>
   </section>
 
@@ -111,37 +119,19 @@
 
       <form id="registerForm" class="space-y-6">
         <div class="relative">
-          <input 
-            type="text" 
-            name="name" 
-            id="name" 
-            required 
-            placeholder="Nombre completo"
-            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-transparent" 
-          />
+          <input type="text" name="name" id="name" required placeholder="Nombre completo"
+            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-transparent" />
         </div>
-        
+
         <div class="relative">
-          <input 
-            type="email" 
-            name="email" 
-            id="email" 
-            required 
-            placeholder="Correo electrónico"
-            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-transparent" 
-          />
+          <input type="email" name="email" id="email" required placeholder="Correo electrónico"
+            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-transparent" />
         </div>
-        
+
         <div class="relative">
-          <input 
-            type="tel" 
-            name="phone" 
-            id="phone" 
-            required 
-            placeholder="Número de teléfono"
-            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-transparent" 
-          />
-        </div>        
+          <input type="tel" name="phone" id="phone" required placeholder="Número de teléfono"
+            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-transparent" />
+        </div>
 
         <button type="submit"
           class="w-full bg-blue-500 hover:bg-blue-600 transition p-4 rounded-lg text-white font-bold text-lg shadow-md">¡Quiero
