@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +16,15 @@
   <!-- Vanta.js para fondo dinámico -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X294Y1P01E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-X294Y1P01E');
+  </script>
 
   <style>
     body,
@@ -45,10 +55,12 @@
       <!-- Nuevo contenedor flex para ambos botones -->
       <div class="flex justify-center gap-10">
         <a href="#registro"
+          onclick="gtag('event', 'click_unirme', { 'event_category': 'Botones', 'event_label': 'Quiero ser parte' })"
           class="bg-blue-500 hover:bg-blue-600 transition px-6 py-3 rounded-full text-lg font-semibold shadow-md text-white">¡Quiero
           ser parte!</a>
 
         <a href="ruta/a-tu-demo.apk" download
+          onclick="gtag('event', 'click_descargar', { 'event_category': 'Botones', 'event_label': 'Descargar Demo APK' })"
           class="bg-green-500 hover:bg-green-600 transition px-6 py-3 rounded-full text-lg font-semibold shadow-md text-white">
           Descargar Demo / APK
         </a>
